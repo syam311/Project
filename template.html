@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style> 
+             /* CSS style */
+        body{
+            font-family:'Open sans',sans-serif;
+        }
+        .shadow {
+        width: 8px;
+        height: 8px;
+        padding: 15px;
+        background-color: #09e1fd;
+        box-shadow: 10px 10px rgb(15, 15, 15);
+        border-radius: 5px;
+        }
+        .shadow1{
+            position: relative;
+            left: 45px;
+            bottom: 20px;
+        }
+
+        .topic1{
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        .nav{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+        
+        } 
+        .nav1{
+            background-image: linear-gradient(15deg ,#13547a , #80d0c7);
+            padding: 15px;
+            padding-bottom: 80px;
+         
+        }
+       .nav2{
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .nav2 a{
+            margin-right: 30px;
+            text-decoration: none;
+        }
+        .nav2 a:hover{
+            color: rgb(219, 5, 252);
+        }
+        .nav3{
+            margin-top: 20px;
+        }
+        .discover1{
+            text-align: center;
+        }
+        .web1{
+            display: flex;
+            
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 20px;
+            justify-content: center;
+            background-image: linear-gradient( #13547a, #80d0c7);
+          
+        }
+        .search{
+            width: 50%;
+            height: 40px;
+            border-radius: 20px;
+            
+        }
+        .button1{
+        position: relative;
+        right: 100px;
+        top: 3px;
+        background-color: aquamarine;
+        border-radius: 20px;
+        font-size: 20px;
+
+
+        }
+        ::placeholder{
+
+        font-size: 20px;
+        padding-left: 40px;
+        }
+        #sicon{
+            position: relative;
+            left: 40px;
+        }
+    .a{
+
+    display: flex;
+
+    justify-content: center;
+    height: 400px
+    }
+   .a1{
+    height: 300px;
+    width: 200px;
+    background-color: #faf6f9;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 70px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+      }
+
+   .a2{
+
+    position: relative;
+    bottom: 70px;
+    margin-left: 20px;
+    background-image: url(./businesswoman-using-tablet-analysis.jpg);
+    background-size: cover;
+    background-blend-mode:overlay;
+    color: black;
+    background-repeat: no-repeat;
+    width: 500px;
+    height:300px;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.8;
+ 
+    background-color: #06aab2;
+    box-shadow: 5px 5px 5px #aaaaaa;
+  }
+  #book{
+  padding-left: 330px;
+
+  }
+  .container1{
+    text-align: center;
+ }
+  .b1 a{
+   text-decoration: none;
+   margin: 20px;
+   color: black;
+ }
+ .b1 a:hover{
+    border-bottom: 2px solid red;
+    color: #16a7ea;
+    padding: 10px;
+ }
+ .img{
+    opacity: 0.5; 
+    height: 620px;
+    width: 100%;
+ }
+.section{
+display: flex;
+padding: 20px;
+justify-content: center;
+}
+.web-design1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.section1{
+    padding: 20px;
+    background-color: rgb(236, 243, 243);
+    border-radius: 20px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    width: 400px;
+    box-shadow: 20px px;
+
+}
+
+.section2{
+    background-color:whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 20px; 
+    box-shadow: 20px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+.section3{
+    background-color: #ede9e9;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 20px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+.webd{
+    background-color: hsl(190, 92%, 63%);  
+    margin-left: 250px;
+}
+.gra{
+    background-color: rgb(18, 212, 247);  
+     margin-left: 300px;
+}
+.logo{
+    background-color: hsl(185, 100%, 53%); 
+     margin-left: 300px;
+}
+.how{
+    position:relative;
+    background-color: #09e1fd; 
+}
+
+
+.botton{
+    background-color: #0cf0bf;
+    border-radius: 20px;
+    height: 30px;
+}
+.line1{
+            width: 3px;
+            height: 90px;
+            background-color: black;
+            margin-top: 0px;
+            margin-left: 25px;
+        }
+        .circle{
+        width: 50px;
+        height: 50px;
+        border: 3px solid;
+        border-radius: 50%;
+        }
+        .line2{
+            width: 3px;
+            height: 90px;
+            background-color: black;
+            margin-top: 0px;
+            margin-left: 25px;
+        }
+        .flex{
+            display: flex;
+            padding: 20px;
+        }
+        .struc{
+            margin-right: 20px;
+        }    
+        .cont1{
+            position: absolute;
+            top: 20px;
+            padding-right: 150px;
+            padding-left: 150px;
+        }
+
+.fre{
+    margin-top: 50px;
+}
+.frequently{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-around; 
+
+}
+.frequently1{
+    margin-left: 90px;
+}
+.fre2:hover{
+    background-color: #aaaaaa;
+    margin-left: 90px;
+
+    } 
+
+.nav31{
+    display: none;
+}
+.h21{
+    font-size: 38px;
+}
+.h12{
+    display: none;
+}
+.get{
+    background-color: rgb(230, 227, 227);
+    padding-bottom: 30px;
+}
+.get1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 50px;
+background-color: #06aab2;
+padding: 30px;
+}
+.footer1 a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.footer1{
+    margin-right: 200px;
+}
+.footer2{
+    margin-top: 50px;
+
+}
+.ifr{
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    border: 0px;
+
+}
+.select1{
+    background-color: #06aab2;
+    border-radius: 20px; 
+    width: 550px; 
+    height: 40px;
+    padding: 10px;
+    color: #faf6f9;
+}
+.selectp{
+    width:500px ;
+     padding-left: 15px;
+}
+.info123{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    margin-left: 200px;
+
+ } 
+ .fin{
+    margin-left: 400px;
+     background-color: #7448f7
+ }
+ .web{
+    margin-left: 60px ;
+     background-color: rgb(11, 179, 246);
+ }
+
+ .par{
+    width: 60%;
+ }
+ /* media */
+
+@media only screen and (max-width:480px){
+.topic1{
+    display: flex;
+    flex-direction: column;
+}
+.nav2 a{
+    display: block;
+    color: black;
+}
+.nav31{
+ display: inline;
+}
+.nav3{
+    display: none;
+}
+.nav123{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.h12{
+    display: block;
+}
+.h21{
+    display: none;
+}
+.search{
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+}
+.web1{
+    display: flex;
+    flex-direction: column;
+}
+.a1{
+    width: 90%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.a2{
+    width: 90%;
+    margin-left: 0px;
+    height: 350px;
+}
+
+.b1{
+    display: flex;
+    flex-direction: column;
+}
+.web-design1{
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    width: 90%;
+    margin-left: 0px;
+}
+.section2{
+    width: 90%;
+}
+.section3{
+    width: 90%;
+}
+.cont1{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.line1{
+    height: 190px;
+}
+.line2{
+    height: 190px;
+}
+.img{
+    height: 900px;
+ }
+ .frequently{
+    display: flex;
+    flex-direction: column;
+ }
+ .frequently1{
+    margin-left: 0px;
+    width: 100%;
+ }
+ .select1{
+    width: 100%;
+
+ }
+ .selectp{
+    width: 100%;
+    padding-left: 10px;
+ }
+ .get1{
+    display: flex;
+    flex-direction: column;
+ }
+ .ifr{
+    width: 90%;
+    margin: 5%;
+ }
+ .footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 20px;
+ }
+ .footer1{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .info123{
+    display: flex;
+    margin-left: 0px;
+    width: 95%;
+    margin-top: 20px;
+    flex-direction: column;
+ }
+ .dropbtn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .fin{
+    margin-left: 200px;
+
+     background-color: #7448f7
+ }
+ .web{
+    margin-left: 170px;
+     background-color: rgb(11, 179, 246);
+ }
+ .webd{
+    background-color: hsl(190, 92%, 63%);  
+    margin-left: 210px;
+}
+.gra{
+    background-color: rgb(18, 212, 247);  
+     margin-left: 235px;
+}
+.logo{
+    background-color: hsl(185, 100%, 53%); 
+     margin-left: 200px;
+}
+.par{
+    width: 100%;
+}
+.button1{
+        position: absolute;
+        top: 08px;
+        right: 30px;
+        background-color: aquamarine;
+        border-radius: 20px;
+        font-size: 20px;
+}
+form{
+    position: relative;
+}
+::placeholder{
+
+        font-size: 10px;
+        padding-left: 40px;
+        }
+        #book{
+  padding-left: 150px;
+
+  }
+  /* .frame{
+    height: 100px;
+    width: 100px;
+    border: 3px;
+  } */
+}
+</style>
+</head>
+<body>
+<!-- nav bar -->
+<nav>
+<div class="nav">
+                <div class="nav1">
+                    <div class="topic1">
+                        <div class="nav123">
+                            <div class="shadow"><h1 class="shadow1">Topic</h1> </div>
+
+                            <div class="nav31">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </div>
+                         </div>
+                         <div class="nav2">
+                             <a href="#a"> HOME</a>
+                             <a href="#b"> BROWSE TOPIC</a> 
+                             <a href="#c">HOW IT WORKS</a>
+                             <a href="#d"> FAQS</a>
+                             <a href="#e"> PAGES</a>
+                         </div>
+                         <div class="nav3">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </div>
+                    </div>
+                    <div class="discover1" id="a">
+                        <h1 class="h21">Discover. Learn. Enjoy</h1>
+                        <h1 class="h12">Discover. <br> Learn. <br> Enjoy</h1>
+                        <p>Plafrom for cretive around the world</p>
+                        <form action="">
+                            <label for="search-pbox" ></label>
+                            <i class="fa-solid fa-magnifying-glass" id="sicon"></i>
+                            <input type="text" id="input" name="ser"  placeholder="Design, Code, Marketing, Finance ...." class="search"  >
+                            <button class="button1">search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="web1">
+                    <div class="a1">
+                        <h3 >Web Design <span  class="web">14</span></h3>
+                        <p>When you search for free CSS templates, you will notice that TemplateMo is one of the best websites</p>
+                        <img src="./im/undraw_Remote_design_team_re_urdx.png" alt="" width="200px">
+                    </div>
+                    <div class="a2">
+                        <h3 style="color: #faf6f9; z-index: 1;" >Finance <span  class="fin">25</span></h3>
+                        <p >Toplic Listing Template includes homepage, listing page, detail page, and contact page. You can feel free to edit and adapt for your CMS requirements</p>
+                        <button style="background-color: #06b295; border-radius: 20px; ">Learn More</button>
+                        <p style=" padding-top: 100px; margin-left: 5px;">Share:
+                        <i class="fa-brands fa-square-twitter" class="a3"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-pinterest"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-regular fa-bookmark" id="book"></i>
+                    </p>
+                </div>
+                </div>
+        </div>
+</nav>
+<!-- section -->
+<section>
+    <div class="container1">
+        <h1 id="b">
+            Browse Topics
+        </h1>
+        <div class="b1">
+            <a href="h">Design</a>
+            <a href="h"> Marketing</a>
+            <a href="h"> Finance</a>
+            <a href="hjn"> Music</a>
+            <a href="h"> Education</a>
+        </div>
+    </div>
+<div class="web-design1">
+        <div class="section1">
+            <h3>Web Design <span class="webd" >14</span></h3>
+            <p>Tople Listing Termplane based on Bootstrap 5</p>
+            <img src="./im/undraw_Remote_design_team_re_urdx.png" alt="" width="300px">
+        </div>
+        <div  class="section2">
+            <h3>Graphic <span class="gra" >100</span></h3>
+            <p>Lorem Ipsum dolor sit ames consectetur</p>
+            <img src=".\/im/undraw_Redesign_feedback_re_jvm0.png" alt="" width="250px" height="200px">
+        </div>
+        <div  class="section3">
+            <h3>Logo Desing <span class="logo">75</span></h3>
+            <p>Lorem Ipsum dolor sit ames consectetur</p>
+            <img src="./im/colleagues-working-cozy-office-medium-shot.png" alt="" width="250px">
+        </div>
+    </div>
+<div class="how">
+             <div class="img1">
+                 <img src="./colleagues-working-cozy-office-medium-shot.jpg" alt="" class="img"> 
+             </div> 
+            <div class="cont1">
+                <div style="text-align: center;">
+                    <h1 id="c">How does it work</h1>
+                </div>
+                <div class="flex">
+                    <div class="struc">
+                        <div class="circle">
+                            <i class="fa-solid fa-magnifying-glass" style="padding: 16px;"></i>
+                        </div>
+                        <div class="line1">
+                 
+                        </div>
+                        <div class="circle">
+                            <i class="fa-regular fa-bookmark "style="padding: 17px;"></i>
+                        </div> 
+                        <div class="line2">
+
+                        </div>
+                        <div class="circle">
+                            <i class="fa-brands fa-readme" style="padding: 16px;"></i>
+                        </div> 
+                    </div>
+                    <div class="struck2">
+                        <div>
+                            <h3>Search your favourite topic?</h3>
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Reiciendis, cumque magnam? Sequi, cupiditate quibusdam allas Illum sed esse ad dignissimos libero sunt, quisquam numquam aliquam? Voluptas, accusamus omnis?</p>
+                        </div><br>
+                        <div>
+                            <h3>Bookmark & Keep it for yourself?</h3>
+                            <p>Lorely ipsum dolor, sit amet consectetur adipisicing elit. Sint animi necessitatibus aperiam repudiandae nam omnis est vel quo, nihil repellat quia vellt error modi earum similique odit labore Doloremque, repudiandae?
+                            </p>
+                        </div>
+                        <br>
+                        <div>
+                            <h3>Read & Enjoy?</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, Reiciendis, cumque magnam? Sequi, cupiditate quibusdam allas Illum sed esse ad dignissimos libero sunt, quisquam numquam aliquam? Voluptas, accusamus omnis?</p>
+                        </div>
+                      <br>
+                           <center> <p> want to learn more? &nbsp;&nbsp; <button class="botton">Visit Our YouTube</button></p></center> 
+                        </div>
+                </div>
+            </div>
+        </div>
+<div class="fre">
+                <div>
+                    <h1 style="margin-left: 90px;" id="d">Frequently Asked <h1 style="margin-left: 90px;">Questions</h1> </h1>
+                </div>
+             <div class="frequently">
+                <div>
+                    <img src="./faq_graphic.jpg" alt="" width="300px">
+                </div>
+                <div class="frequently1">
+                    <div class="list">
+                        &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  <details class="fre2" >
+                          <summary>What is Topic Listing </summary>
+                          Topic Listing is free Bootstrap 5 CSS template You are not allowed to redistribute this template on any other template collection website without our permission. Please contact TemplateMo for more detail. Thank you.
+                        </details>
+                        &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  <details class="fre2" >
+                          <summary>How To Find a Topic</summary>
+                          Topic Listing is free Bootstrap 5 CSS template You are not allowed to redistribute this template on any other template collection website without our permission. Please contact TemplateMo for more detail. Thank you.
+                        </details>
+                        &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  <details class="fre2" >
+                          <summary>Does it need to Paid </summary>
+                          Topic Listing is free Bootstrap 5 CSS template You are not allowed to redistribute this template on any other template collection website without our permission. Please contact TemplateMo for more detail. Thank you.
+                        </details>
+                      </div>
+                    </div>
+            </div>
+            </div>
+</section> 
+<!-- this is article -->
+    <article>
+    <div class="get">
+        <h1 style="text-align: center; padding-top: 20px;" id="e">Get in touch</h1>
+      <div class="get1">
+        <div class="frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.301802724667!2d78.39954787369206!3d17.493100799754032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91625d9cd1ad%3A0x4455387ad24a675d!2s10000coders!5e0!3m2!1sen!2sin!4v1714897859505!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div >
+        <div>
+            <h3>Head office</h3>
+            <p>KPHB Metro<br>
+               Hydrabad,telangana
+            </p>
+            <hr>
+            <p> Phone : ##########</p>
+            <p>Email : ********@gmail.com</p>
+        </div>
+        <div>
+            <h3>Hydrabad office</h3>
+            <p>KPHB Metro,
+                <br> INDIA</p>
+                <hr>
+            <p>Phone :  #########</p>
+            <p>Email :   *******@gamil.com</p>
+        </div>
+    </div>
+    </div>
+</article>
+ <!-- footer -->
+<footer class="footer">
+    <div class="footer2">
+        <div class="shadow"><h1 class="shadow1">Topic</h1> </div>
+    </div>
+    <div class="info123">
+        <div class="footer1">
+            <h4> Resources</h4>
+            <a href="" style="color: aquamarine;"> Home</a>
+            <a href="" style="color: aquamarine;"> How it works </a>
+            <a href="" style="color: aquamarine;"> FAQs</a>
+            <a href="" style="color: aquamarine;"> Contact</a>
+        </div>
+        <div class="info">
+            <h4>Information</h4>
+            <p style="color: aquamarine;">***-***-***</p>
+            <p style="color: aquamarine;">#######@gmail.com</p>
+        </div>
+    </div>
+    <div >
+        <div class="dropdown">
+<form action="#">
+        <label for="lang"></label>
+                    <select name="languages" id="lang">
+                      <option value="javascript">ENGLISH</option>
+                      <option value="php">PHP</option>
+                      <option value="java">Java</option>
+                      <option value="golang">Golang</option>
+                      <option value="python">Python</option>
+                      <option value="c#">C#</option>
+                      <option value="C++">C++</option>
+                      <option value="erlang">Erlang</option>
+                    </select>
+                  </form>
+            &nbsp;<i class="fa fa-caret-down"></i>
+            </button>
+ <p > Copyright @ 2048 Topic Listing Center <br>
+            All rights reserved</p>
+          <p >Created By : <span style="color: rgb(182, 163, 182);text-decoration: none;"><a href="nj">Alwayss_syam</a></span></p>
+    </div>
+   </footer> 
+</body>
+</html>   
+
+
